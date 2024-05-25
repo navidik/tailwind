@@ -1,8 +1,21 @@
-# React + Vite
+this is how to use tailwindcss component to react project and make the ui so fast and easily
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+steps
+npm create vite@latest my-project -- --template react   //this creating new vite react project 
+cd my-project
 
-Currently, two official plugins are available:
+npm install -D tailwindcss postcss autoprefixer //install the packages
+npx tailwindcss init -p
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+and  "./index.html",  "./src/**/*.{js,ts,jsx,tsx}", put on tailwind.config.js content area
+
+and put this 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; in index.css file
+
+npm run dev
+
+this is how install tailwindcss in react vite project
+
+after that copy the component jsx file put to the project and create the ui
